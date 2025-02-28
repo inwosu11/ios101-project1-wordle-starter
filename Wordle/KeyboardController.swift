@@ -30,7 +30,7 @@ class KeyboardController: NSObject,
     // Exercise 1: Return the correct number of items in a section
     // Tip: There's a helper method you can use located in this class
     // START YOUR CODE HERE
-    return 0
+    return numItems(in: section)
     // END YOUR CODE HERE
   }
 
@@ -47,7 +47,7 @@ class KeyboardController: NSObject,
   }
 
   // MARK: - Private Methods
-  func numItems(in row: Int) -> Int {
+  func numItems(in row: Int) -> Int {// takes an integer parameter row and returns an integer
     return keyboardRows[row].count
   }
 }
